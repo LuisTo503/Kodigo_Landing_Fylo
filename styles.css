@@ -1,0 +1,89 @@
+/* Variables for color theming */
+:root {
+    --primary-color: #1c2237;
+    --secondary-color: #1f2937;
+    --accent-color: #38bdf8;
+    --text-color: #ffffff;
+}
+
+
+/* General body styling */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header and Footer styling */
+.header, .footer {
+    background-color: var(--secondary-color);
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.btn-primary:hover {
+    background-color: #67e8f9;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #62DFD8, #36A3CD);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #36A3CD, #62DFD8);
+    text-decoration: none;
+}
+
+/* Specific section stylings */
+.section-hero, .section-features, .section-productive, .section-testimonials, .section-cta {
+    padding: 5rem 0;
+}
+
+
+.section-productive {
+    background-color: var(--secondary-color);
+}
+
+.section-testimonials {
+    background-color: var(--primary-color);
+}
+
+/* Input styling */
+.form-control {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.form-control::placeholder {
+    color: var(--text-color);
+}
+
+/* Additional utility classes */
+.rounded-pill {
+    border-radius: 50rem;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light {
+    color: var(--text-color);
+}

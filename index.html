@@ -1,0 +1,254 @@
+    <!-- Code: Luis Rolando Tobar -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fylo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #1c2237;
+        --secondary-color: #1f2937;
+        --accent-color: #38bdf8;
+        --text-color: #ffffff;
+      }
+
+      body {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-family: "Arial", sans-serif;
+      }
+
+      .header,
+      .footer {
+        background-color: var(--secondary-color);
+      }
+
+      .btn {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+      }
+
+      .btn:hover {
+        background-color: #67e8f9;
+      }
+    </style>
+
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="header py-6">
+      <div class="container mx-auto flex justify-between items-center px-6">
+        <h1 class="text-3xl font-bold">Fylo</h1>
+        <nav class="space-x-4">
+          <a href="#" class="hover:text-gray-400">Features</a>
+          <a href="#" class="hover:text-gray-400">Team</a>
+          <a href="#" class="hover:text-gray-400">Sign In</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="py-12 text-center">
+        <div class="container mx-auto px-6">
+          <img
+            src="https://res.cloudinary.com/dtbvpnqln/image/upload/v1723428947/illustration-intro_nbya3z.png"
+            alt="Hero Image"
+            class="mx-auto mb-6"
+          />
+          <h2 class="text-4xl font-bold mb-4">
+            All your files in one secure location, accessible anywhere.
+          </h2>
+          <p class="mb-6">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.
+          </p>
+
+          <a href="#" class="btn btn-gradient px-6 py-3 rounded-full font-bold"
+            >Get Started</a
+          >
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-12">
+        <div
+          class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <div class="text-center">
+            <img
+              src="https://res.cloudinary.com/dtbvpnqln/image/upload/v1723428944/icon-access-anywhere_iftwjg.svg"
+              alt="Feature 1"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Access your files, anywhere</h3>
+            <p>
+              The ability to use a smartphone, tablet, or computer to access
+              your account means your files follow you everywhere.
+            </p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://res.cloudinary.com/dtbvpnqln/image/upload/v1723428946/icon-security_qbgrlc.svg"
+              alt="Feature 2"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Security you can trust</h3>
+            <p>
+              2-factor authentication and user-controlled encryption are just a
+              couple of the security features we allow to help secure your
+              files.
+            </p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://res.cloudinary.com/dtbvpnqln/image/upload/v1723428945/icon-collaboration_r4b8wr.svg"
+              alt="Feature 3"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Real-time collaboration</h3>
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://res.cloudinary.com/dtbvpnqln/image/upload/v1723428946/icon-any-file_p3giqw.svg"
+              alt="Feature 4"
+              class="mx-auto mb-4"
+            />
+            <h3 class="text-xl font-bold mb-2">Store any type of file</h3>
+            <p>
+              Whether you're sharing holidays photos or work documents, Fylo has
+              you covered allowing for all file types to be securely stored and
+              shared.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Productive Section -->
+      <section class="py-12 text-center">
+        <div class="container mx-auto px-6">
+          <img
+            src="https://res.cloudinary.com/dtbvpnqln/image/upload/v1723428947/illustration-stay-productive_h385q8.png"
+            alt="Section Productive"
+            class="mx-auto mb-4"
+          />
+
+          <h2 class="text-4xl font-bold mb-4">
+            Stay productive, wherever you are
+          </h2>
+          <p class="mb-6">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+          <a href="#" class="btn px-6 py-3 rounded-full font-bold"
+            >See how Fylo works</a
+          >
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="py-12 bg-gray-800">
+        <div
+          class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+        >
+          <div>
+            <p>
+              "Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine."
+            </p>
+            <p class="mt-4 font-bold">- Satish Patel, Founder & CEO, Huddle</p>
+          </div>
+          <div>
+            <p>
+              "Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine."
+            </p>
+            <p class="mt-4 font-bold">
+              - Bruce McKenzie, Founder & CEO, Tech Ltd.
+            </p>
+          </div>
+          <div>
+            <p>
+              "Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine."
+            </p>
+            <p class="mt-4 font-bold">- Iva Boyd, Founder & CEO, Media Inc.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-12 text-center">
+        <div class="container mx-auto px-6">
+          <h2 class="text-4xl font-bold mb-4">Get early access today</h2>
+          <p class="mb-6">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+          <form
+            action="#"
+            class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4"
+          >
+            <input
+              type="email"
+              placeholder="email@example.com"
+              class="px-4 py-3 rounded-full text-gray-700"
+            />
+            <button type="submit" class="btn px-6 py-3 rounded-full font-bold">
+              Get Started For Free
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-12">
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Fylo</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-4">Contact</h4>
+          <p>Phone: +1-543-123-4567</p>
+          <p>Email: example@fylo.com</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-4">Links</h4>
+          <nav class="space-y-2">
+            <a href="#" class="block hover:text-gray-400">About Us</a>
+            <a href="#" class="block hover:text-gray-400">Jobs</a>
+            <a href="#" class="block hover:text-gray-400">Press</a>
+            <a href="#" class="block hover:text-gray-400">Blog</a>
+          </nav>
+        </div>
+      </div>
+      <div class="container mx-auto px-6 mt-8 text-center">
+        <p>&copy; 2024 Fylo. All rights reserved. | Code: Luis Tobar</p>
+      </div>
+    </footer>
+  </body>
+</html>
